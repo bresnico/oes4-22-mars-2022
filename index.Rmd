@@ -1,0 +1,281 @@
+---
+title: "Formation continue obligatoire des ES du VS Romand"
+subtitle: "Avancement du projet HEP-VS &#x1F305;"  
+team: "Comité de pilotage du projet"
+author: "Sous la direction d'Anne-Françoise Martinon"
+date: "24 janvier 2022"
+photo_creds: "[Kévin Jiner](https://unsplash.com/photos/_fbNUOXbabE)" 
+url_unsplash: "https://images.unsplash.com/photo-1612630646667-d25adadaba8c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3096&q=80"
+url_website: "https://bresnico.github.io/archives/"
+url_concept: "https://hepvsch-my.sharepoint.com/:b:/g/personal/nicolas_bressoud_hepvs_ch/EcwHKI8mmt1Pg4zDCGeyCwcBMmr8Opo1nYvVBG0AdD2FDg?e=bqhv7a"
+background_position: "1050px 20px"
+background_size: "100px"
+output:
+  xaringan::moon_reader:
+    self_contained: true
+    css: ["default", "xaringan-themer.css"]
+    seal: false
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width = 9, fig.height = 3.5, fig.retina = 3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE,
+  warning = FALSE,
+  fig.show = TRUE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#D2202B",
+  secondary_color = "#D2202B",
+  inverse_header_color = "#FFFFFF",
+  link_color = "#676C72",
+    header_font_google = google_font("Josefin Sans")
+
+)
+```
+
+class: title-slide, inverse, bottom
+background-image: url(`r rmarkdown::metadata$url_unsplash`)
+background-size: cover
+
+# `r rmarkdown::metadata$title`
+
+## `r rmarkdown::metadata$subtitle`
+
+### `r rmarkdown::metadata$team`
+
+### `r rmarkdown::metadata$date`
+
+---
+class: about-me, middle, center
+
+
+<img style="border-radius: 50%;" src="https://pbs.twimg.com/profile_images/1300813855183065100/-Rd3mskJ.jpg" width="150px"/>
+
+## Formation continue HEP-VS
+
+[`r icons::fontawesome("link")` Archives des séances du projet](`r rmarkdown::metadata$url_website`)</br>
+[`r icons::fontawesome("user-lock")` Concept dans sa version la plus récente](`r rmarkdown::metadata$url_intranet`)
+---
+class: inverse, middle left
+
+# Ordre du jour
+
+--
+
+### État d'avancement général
+
+--
+
+### Retours sur les séances CS (10.01.22) et GC (11.01.22)
+
+--
+
+### Suites de la rencontre du 21.12.21 avec le SE
+
+--
+
+### Divers
+
+---
+class: middle
+
+## État d'avancement général
+
+--
+
+.pull-left[
+### &#x1F7E2; Conforme à la planification
+### &#x1F642; Risque faible
+
+]
+
+.pull-right[
+### &#x1F7E0; Mis en attente
+### &#x1F914; Risque potentiel
+
+]
+
+---
+
+class: middle
+
+## État d'avancement général
+
+.pull-left[
+### &#x1F7E2; Conforme à la planification
+### &#x1F642; Risque faible
+
+- Collaboration avec les associations
+- Préparation des espaces de communication
+- Identification des enjeux techniques (ICT-VS notamment)
+- Mise en place de la structure administrative
+- Affinage du design pédagogique
+
+]
+
+.pull-right[
+### &#x1F7E0; Mis en attente
+### &#x1F914; Risque potentiel
+
+- Sécurisation du budget (**?**)
+- Clarification des relations avec les institutions sollicitées (pour **mi-février 2022**)
+- Préparation de la communication (pour **fin février 2022**)
+- Validation des équipes de formation (pour **fin mars 2022**)
+- Validation des contenus avancés (pour **fin mars 2022**)
+
+]
+
+---
+
+class: middle
+
+## Retours sur les séances CS (10.01) et GC (11.01)
+
+--
+
+### CS
+
+- Volonté de réarticuler les 4 thèmes (via un **modèle sous-jacent**)
+- Enjeux importants dans le **statut des relations** avec la HEP-VS
+- Volonté d'utiliser Teams mais **pas le comodal**
+- *Délivrable* en cours d'élaboration (**donner du sens**)
+
+### GC
+
+- **Confiance** dans le dispositif et les travaux en cours
+- Demande une exemplarité dans le choix et la communication des dates (**communication impeccable au monde scolaire**)
+- Considère que la **qualité des feedbacks** des équipes de formation est la priorité.
+- Insiste sur un *délivrable* qui est **utile** aux personnes (répond aux besoins).
+
+---
+class: middle center
+
+### Clarifiction des relations avec les autres institutions (projet)
+
+
+.pull-left[
+```{r org-old, echo=FALSE, out.width="75%"}
+library(knitr)
+include_graphics("img/org.png")
+```
+
+
+]
+
+.pull-right[
+```{r graph, echo=FALSE, out.width="100%"}
+library(DiagrammeR)
+grViz('
+
+digraph nbr {
+rankdir = TD
+cs[label = "le comité scientique"]
+cp[label = "le comité de pilotage"]
+gc[label = "le groupe consultatif"]
+oes[label = "l&#39;OES"]
+se[label = "le SE"]
+
+subgraph cluster_organes {
+label="Organes de la formation";
+color = red
+fontsize = 25
+fontcolor = red
+margin="30"
+{rank="same" ; cp ; cs}
+gc
+}
+
+cp -> oes [label = "demande validation"]
+
+cs -> cp [label = "décide et communique \nle cadre pédagogique et scientifique"; color ="blue"; fontcolor ="blue"]
+
+cp -> cs [label = "décide et communique \nle cadre administratif et financier"]
+
+gc -> cp [label = "adresse \nles commentaires et propositions"]
+
+oes -> se
+se -> oes
+
+}      
+      
+')
+```
+
+[Voir l'image en plus grand](https://github.com/bresnico/oes3-24-janvier-2022/raw/master/img/graph.png)
+]
+
+---
+
+class: middle
+
+## Suites de la rencontre du 21 décembre avec le SE
+
+--
+
+- Stratégie budgétaire **?**
+
+- Influence sur le calendrier de la formation **?**
+
+- Poursuite des relations : interlocuteurs **?**
+
+---
+
+class: middle
+
+## Divers
+
+--
+### Affaires courantes
+
+- Identification du public-cible et des catégories
+
+--
+
+### Prochaines tâches
+
+- Adaptation du calendrier d'avancement
+
+- Affinage du concept de formation (design pédagogique)
+
+- Remaniement de l'organigramme
+
+- Prochaine séance avec OES : **après communication aux ES ?**
+
+
+---
+class: middle
+
+.left[
+
+```{r out.width = '10%', echo=FALSE}
+# local
+knitr::include_graphics("img/logo.png")
+```
+
+]
+
+--
+
+.right[
+
+Crédits Photos :
+
+[Kévin Jiner](https://unsplash.com/photos/_fbNUOXbabE)
+
+]
