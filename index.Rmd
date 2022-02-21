@@ -3,7 +3,7 @@ title: "Formation continue obligatoire des ES du VS Romand"
 subtitle: "Avancement du projet HEP-VS &#x1F305;"  
 team: "Comité de pilotage du projet"
 author: "Sous la direction d'Anne-Françoise Martinon"
-date: "24 janvier 2022"
+date: "22 mars 2022"
 photo_creds: "[Kévin Jiner](https://unsplash.com/photos/_fbNUOXbabE)" 
 url_unsplash: "https://images.unsplash.com/photo-1612630646667-d25adadaba8c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3096&q=80"
 url_website: "https://bresnico.github.io/archives/"
@@ -77,6 +77,11 @@ class: inverse, middle left
 # Ordre du jour
 
 --
+
+[prévu] Go/No-Go pour communication fin mars et démarrage formation en août 2022
+[prévu] Nom de la formation
+[prévu] Collaboration avec les insitutions partenaires
+[prévu] Adaptation du calendrier d’avancement du projet
 
 - [ ]  se préparer pour un démarrage en août avec communication fin mars au plus tard. Feu vert de Gu Dayer en attente.
 - [ ]  Réunion avant fin mars pour décider de communiquer ou reporter. mardi 22 mars 14h00 à 15h00 !! Décision formelle sur suites du calendrier (Visioconférence organisée par la HEP-VS)
