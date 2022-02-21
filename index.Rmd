@@ -78,6 +78,10 @@ class: inverse, middle left
 
 --
 
+- [ ]  se préparer pour un démarrage en août avec communication fin mars au plus tard. Feu vert de Gu Dayer en attente.
+- [ ]  Réunion avant fin mars pour décider de communiquer ou reporter. mardi 22 mars 14h00 à 15h00 !! Décision formelle sur suites du calendrier (Visioconférence organisée par la HEP-VS)
+- [ ]  Nom de la formation ?
+
 ### État d'avancement général
 
 --
