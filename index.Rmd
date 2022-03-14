@@ -4,10 +4,10 @@ subtitle: "Avancement du projet HEP-VS &#x1F305;"
 team: "Comité de pilotage du projet"
 author: "Sous la direction d'Anne-Françoise Martinon"
 date: "22 mars 2022"
-photo_creds: "[Kévin Jiner](https://unsplash.com/photos/_fbNUOXbabE)" 
-url_unsplash: "https://images.unsplash.com/photo-1612630646667-d25adadaba8c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3096&q=80"
+photo_creds: "[Paul Skorupskas](https://unsplash.com/photos/7KLa-xLbSXA)" 
+url_unsplash: "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
 url_website: "https://bresnico.github.io/archives/"
-url_concept: "https://hepvsch-my.sharepoint.com/:b:/g/personal/nicolas_bressoud_hepvs_ch/EcwHKI8mmt1Pg4zDCGeyCwcBMmr8Opo1nYvVBG0AdD2FDg?e=bqhv7a"
+url_concept_public: "https://hepvsch-my.sharepoint.com/:b:/g/personal/nicolas_bressoud_hepvs_ch/EV-5tXdMaT5IjFfELnSpMmEBwYLB9vsD5Duv_g6vtAxFow?e=0cOz1H"
 background_position: "1050px 20px"
 background_size: "100px"
 output:
@@ -70,7 +70,7 @@ class: about-me, middle, center
 ## Formation continue HEP-VS
 
 [`r icons::fontawesome("link")` Archives des séances du projet](`r rmarkdown::metadata$url_website`)</br>
-[`r icons::fontawesome("user-lock")` Concept dans sa version la plus récente](`r rmarkdown::metadata$url_intranet`)
+[`r icons::fontawesome("user-lock")` Concept dans sa version la plus récente](`r rmarkdown::metadata$url_concept_public`)
 ---
 class: inverse, middle left
 
@@ -78,35 +78,34 @@ class: inverse, middle left
 
 --
 
-[prévu] Go/No-Go pour communication fin mars et démarrage formation en août 2022
-[prévu] Nom de la formation
-[prévu] Collaboration avec les insitutions partenaires
-[prévu] Adaptation du calendrier d’avancement du projet
-
-- [ ]  se préparer pour un démarrage en août avec communication fin mars au plus tard. Feu vert de Gu Dayer en attente.
-- [ ]  Réunion avant fin mars pour décider de communiquer ou reporter. mardi 22 mars 14h00 à 15h00 !! Décision formelle sur suites du calendrier (Visioconférence organisée par la HEP-VS)
-- [ ]  Nom de la formation ?
-
 ### État d'avancement général
 
 --
 
-### Retours sur les séances CS (10.01.22) et GC (11.01.22)
+### Go / No Go pour communication fin mars et démarrage formation en août 2022
 
 --
 
-### Suites de la rencontre du 21.12.21 avec le SE
+### Nom de la formation
+
+--
+
+### Collaboration avec les insitutions partenaires
+
+--
+
+### Adaptation du calendrier d’avancement du projet
 
 --
 
 ### Divers
 
 ---
+
 class: middle
 
-## État d'avancement général
+# État d'avancement général
 
---
 
 .pull-left[
 ### &#x1F7E2; Conforme à la planification
@@ -124,7 +123,8 @@ class: middle
 
 class: middle
 
-## État d'avancement général
+# État d'avancement général
+
 
 .pull-left[
 ### &#x1F7E2; Conforme à la planification
@@ -135,6 +135,8 @@ class: middle
 - Identification des enjeux techniques (ICT-VS notamment)
 - Mise en place de la structure administrative
 - Affinage du design pédagogique
+- Clarification des relations avec les institutions sollicitées
+
 
 ]
 
@@ -142,9 +144,7 @@ class: middle
 ### &#x1F7E0; Mis en attente
 ### &#x1F914; Risque potentiel
 
-- Sécurisation du budget (**?**)
-- Clarification des relations avec les institutions sollicitées (pour **mi-février 2022**)
-- Préparation de la communication (pour **fin février 2022**)
+- Sécurisation du budget (pour **fin mars 2022**)
 - Validation des équipes de formation (pour **fin mars 2022**)
 - Validation des contenus avancés (pour **fin mars 2022**)
 
@@ -154,117 +154,45 @@ class: middle
 
 class: middle
 
-## Retours sur les séances CS (10.01) et GC (11.01)
-
---
-
-### CS
-
-- Volonté de réarticuler les 4 thèmes (via un **modèle sous-jacent**)
-- Enjeux importants dans le **statut des relations** avec la HEP-VS
-- Volonté d'utiliser Teams mais **pas le comodal**
-- *Délivrable* en cours d'élaboration (**donner du sens**)
-
-### GC
-
-- **Confiance** dans le dispositif et les travaux en cours
-- Demande une exemplarité dans le choix et la communication des dates (**communication impeccable au monde scolaire**)
-- Considère que la **qualité des feedbacks** des équipes de formation est la priorité.
-- Insiste sur un *délivrable* qui est **utile** aux personnes (répond aux besoins).
-
----
-class: middle center
-
-### Clarifiction des relations avec les autres institutions (projet)
-
-
-.pull-left[
-```{r org-old, echo=FALSE, out.width="75%"}
-library(knitr)
-include_graphics("img/org.png")
-```
-
-
-]
-
-.pull-right[
-```{r graph, echo=FALSE, out.width="100%"}
-library(DiagrammeR)
-grViz('
-
-digraph nbr {
-rankdir = TD
-cs[label = "le comité scientique"]
-cp[label = "le comité de pilotage"]
-gc[label = "le groupe consultatif"]
-oes[label = "l&#39;OES"]
-se[label = "le SE"]
-
-subgraph cluster_organes {
-label="Organes de la formation";
-color = red
-fontsize = 25
-fontcolor = red
-margin="30"
-{rank="same" ; cp ; cs}
-gc
-}
-
-cp -> oes [label = "demande validation"]
-
-cs -> cp [label = "décide et communique \nle cadre pédagogique et scientifique"; color ="blue"; fontcolor ="blue"]
-
-cp -> cs [label = "décide et communique \nle cadre administratif et financier"]
-
-gc -> cp [label = "adresse \nles commentaires et propositions"]
-
-oes -> se
-se -> oes
-
-}      
-      
-')
-```
-
-[Voir l'image en plus grand](https://github.com/bresnico/oes3-24-janvier-2022/raw/master/img/graph.png)
-]
+# Go / No Go pour communication fin mars et démarrage formation en août 2022
 
 ---
 
 class: middle
 
-## Suites de la rencontre du 21 décembre avec le SE
-
---
-
-- Stratégie budgétaire **?**
-
-- Influence sur le calendrier de la formation **?**
-
-- Poursuite des relations : interlocuteurs **?**
+# Nom de la formation
 
 ---
 
 class: middle
 
-## Divers
+# Collaboration avec les insitutions partenaires
+
+---
+
+class: middle
+
+# Adaptation du calendrier d’avancement du projet
 
 --
-### Affaires courantes
 
-- Identification du public-cible et des catégories
+### Tâches courantes et prochains jalons
+En cas de démarrage en **août 2022**
 
 --
 
-### Prochaines tâches
+- Figer les contenus (**CS** pour **fin mars**)
+- Communiquer au public-cible **1** (**OES** pour **fin mars**)
+- Mettre les horaires en consultation (CP pour **début avril**)
+- Répartir les contenus entre équipes (**CS** pour **fin avril**)
+- Communiquer au public-cible **2** (**OES** pour **fin avril**)
+- Ouverture des inscriptions (**CP** pour **début mai**)
 
-- Adaptation du calendrier d'avancement
+---
 
-- Affinage du concept de formation (design pédagogique)
+class: middle
 
-- Remaniement de l'organigramme
-
-- Prochaine séance avec OES : **après communication aux ES ?**
+# Divers
 
 
 ---
@@ -277,6 +205,8 @@ class: middle
 knitr::include_graphics("img/logo.png")
 ```
 
+## Merci pour votre confiance.
+
 ]
 
 --
@@ -285,6 +215,6 @@ knitr::include_graphics("img/logo.png")
 
 Crédits Photos :
 
-[Kévin Jiner](https://unsplash.com/photos/_fbNUOXbabE)
+[Paul Skorupskas](https://unsplash.com/photos/7KLa-xLbSXA)
 
 ]
