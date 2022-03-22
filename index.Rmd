@@ -90,7 +90,7 @@ class: inverse, middle left
 
 --
 
-### Collaboration avec les insitutions partenaires
+### Collaboration avec les institutions partenaires
 
 --
 
